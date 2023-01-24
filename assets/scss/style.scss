@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+$font-family-base: "Alata", sans-serif;
+$font-family-serif: "Josefin Sans", sans-serif;
+
+$font-family-title: $font-family-serif;
+$font-family-body: $font-family-base;
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+$transition: cubic-bezier(0.5, 0.7, 0.4, 1);
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+.para {
+  font-family: $font-family-base;
+  color: $dark-gray;
+  font-size: 15px;
+}
+
+body {
+  font-family: $font-family-title;
+  font-weight: 300;
+}
+
+.custom-navbar {
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  background-color: transparent !important;
+
+  .navbar-toggler {
+    color: $white;
+
+    border-color: transparent;
+    &:active,
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .custom-navbar-nav {
+    .nav-item {
+      margin-right: 3vw;
+      padding: 0;
+      @media (min-width: $lg) {
+        .nav-link {
+          color: $white;
+          font-family: $font-family-body;
+          position: relative;
+          overflow: hidden;
+          &::after {
+            display: block;
+            content: "";
+            height: 2px;
+            background-color: $white !important;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: translateX(-115%);
+          }
+
+          &:hover::after {
+            transition: transform 0.5s $transition;
+            transform: translateX(0);
+          }
+          &.animate-out::after {
+            transition: transform 0.5s $transition;
+            transform: translateX(100%);
+          }
+        }
+      }
+    }
+  }
+}
+.hero {
+  height: 65vh;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: $md) {
+    height: 80vh;
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.feature {
+  padding: 55px 10px;
+  @media (min-width: $md) {
+    padding: 155px 150px;
+  }
+}
+@media (min-width: $lg) {
+  .m-n1 {
+    margin: 7rem 0 -7rem -7rem;
+  }
+  .fe-text {
+    padding: 10rem 0 0 6rem;
+  }
+}
+.btn-property {
+  padding: 12px 64px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  border: 2px solid black;
+  font-family: $font-family-body;
+  text-transform: uppercase;
+  background: transparent;
+  color: $black;
+  font-size: 1rem;
+  border-radius: 0;
+  transition: all 0.55s ease-out;
+  box-shadow: 3px 3px 3px -1px #000;
+}
+.btn-property:hover {
+  border: 2px solid black;
+  background-color: $black;
+  color: $white;
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay img {
+  filter: blur(3px);
+  transition: all 0.4s ease-out;
+}
+.overlay:hover img {
+  filter: blur(0);
+  transform-origin: center;
+  transform: scale(0.98);
+}
+
+.overlay::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.1;
+  background-color: rgba($white, 0.7);
+  transition: all 0.5s ease-in-out;
+}
+.overlay:hover::after {
+  opacity: 0;
+}
+.store {
+  padding-bottom: 100px;
+}
+.footer {
+  padding: 100px;
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.fa-times {
+  display: none;
+}
+.active {
+  display: block;
+}
+.display-nav {
+  background-color: $black !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  text-transform: uppercase;
+  .navbar-collapse {
+    margin-top: 10rem;
+    gap: 5rem;
+    .nav-item {
+      .nav-link {
+        color: white;
+      }
+    }
+  }
+}

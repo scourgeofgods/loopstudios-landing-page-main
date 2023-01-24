@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="position-relative container-xxl p-0">
+      <nav
+        class="custom-navbar navbar navbar-expand-lg fixed-top"
+        style="z-index: 1"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.svg" class="img-fluid" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-times fa-2x"></i>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarText">
+            <ul class="navbar-nav custom-navbar-nav ms-auto mb-lg-0 mb-2">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div
+          class="h-100 d-flex align-items-center justify-content-center justify-content-md-start container px-5"
+        >
+          <div class="col-md-10 col-lg-6 mt-5">
+            <h1
+              class="display-3 text-uppercase border-1 text-light custom-h1 lh-sm mt-5 border py-4 px-3 text-start"
+            >
+              Immersive experiences that deliver
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="feature">
+      <div class="container">
+        <div class="row h-100 m-0">
+          <div class="col-12 col-lg-6 m-0 p-0">
+            <picture>
+              <source
+                srcset="assets/images/desktop/image-interactive.jpg"
+                media="(min-width:768px)"
+              />
+              <img
+                src="assets/images/mobile/image-interactive.jpg"
+                class="img-fluid h-100"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="col-12 col-lg-6 m-n1">
+            <div
+              class="fe-text text-lg-start mb-lg-5 bg-white py-5 text-center"
+            >
+              <h1 class="text-uppercase fw-bold display-5">
+                The Leader In Interactive Vr
+              </h1>
+              <p class="para lh-lg mt-lg-5">
+                Founded in 2011, Loopstudios has been producing world-class
+                virtual reality projects for some of the best companies around
+                the globe. Our award-winning creations have transformed
+                businesses through digital experiences that bind to their brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="store">
+      <div class="container">
+        <div class="row row-gap-5 justify-content-center w-100">
+          <div class="col">
+            <h3
+              class="display-5 text-uppercase fw-bold text-lg-start text-center"
+            >
+              Our creations
+            </h3>
+          </div>
+          <div class="col order-lg-0 text-lg-end order-3 text-center">
+            <button class="btn btn-property ms-auto" type="button">
+              See all
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="row g-3">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-deep-earth.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-deep-earth.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    Deep <br />
+                    Earth
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-night-arcade.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-night-arcade.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    Night <br />
+                    Arcade
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-soccer-team.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-soccer-team.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0 text-white"
+                  >
+                    Soccer <br />
+                    Team VR
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-grid.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-grid.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    The <br />
+                    grid
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-from-above.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-from-above.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    From up <br />above VR
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-pocket-borealis.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-pocket-borealis.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    Pocket <br />borealis
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-curiosity.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-curiosity.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    The <br />curiosity
+                  </h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="position-relative overlay text-white">
+                  <picture>
+                    <source
+                      srcset="assets/images/desktop/image-fisheye.jpg"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="assets/images/mobile/image-fisheye.jpg"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </picture>
+                  <h1
+                    class="fs-1 fw-bold text-uppercase position-absolute ms-5 ms-lg-4 ff-title bottom-0"
+                  >
+                    Mask It <br />fisheye
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <div class="row gy-5">
+              <div class="col-12 text-lg-start text-center">
+                <a href=" " class="navbar-brand">
+                  <img src="assets/images/logo.svg" alt="" class="img-fluid"
+                /></a>
+              </div>
+              <div class="col-12">
+                <ul
+                  class="list-unstyled custom-navbar-nav d-flex flex-column flex-lg-row align-items-lg-start justify-content-lg-start align-items-center fs-3 gap-5"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="row gap-5">
+              <div class="col-12">
+                <ul
+                  class="d-flex align-items-center justify-content-center justify-content-lg-end custom-navbar-nav list-unstyled gap-5"
+                >
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <img src="assets/images/icon-facebook.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <img src="assets/images/icon-twitter.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img src="assets/images/icon-pinterest.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link"
+                      ><img src="assets/images/icon-instagram.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 text-lg-end text-center">
+                <p class="fs-7">© 2021 Loopstudios. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/boostrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
